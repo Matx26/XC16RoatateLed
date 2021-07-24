@@ -1,21 +1,23 @@
-Microchip Technology Inc, v1.34 (A)
+Microchip Technology Inc, v1.70 (B)
 
 Tool Name:
-  c:\program files (x86)\microchip\xc16\v1.34\bin\bin\..\bin/coff-ld.exe
+  c:\program files\microchip\xc16\v1.70\bin\bin\..\bin/coff-ld.exe
 
 Command:
   -p24FJ64GA002 \
+  --mdfp=C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC24F-GA-GB_DFP/1.4.141/xc16 \
   -o \
-  dist/default/production/Lesson3_Rotate_Led.X.production.cof \
-  -Lc:/program files (x86)/microchip/xc16/v1.34/bin/bin/.. \
-  -Lc:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib \
-  -Lc:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../support/PIC24E/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../support/PIC24F/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../support/PIC24H/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../support/dsPIC30F/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../support/dsPIC33C/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../support/dsPIC33E/gld \
-  -Lc:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../support/dsPIC33F/gld \
+  dist/default/production/RotateLed.X.production.cof \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/.. \
+  -LC:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC24F-GA-GB_DFP/1.4.141/xc16/bin/../support/PIC24F/gld \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../lib \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../support/PIC24E/gld \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../support/PIC24F/gld \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../support/PIC24H/gld \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../support/dsPIC30F/gld \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../support/dsPIC33C/gld \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../support/dsPIC33E/gld \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../support/dsPIC33F/gld \
   build/default/production/RotateLedV011.o \
   --defsym=__MPLAB_BUILD=1 \
   -Tp24FJ64GA002.gld.00 \
@@ -30,7 +32,7 @@ Command:
   --stackguard=16 \
   --no-force-link \
   --smart-io \
-  -Map=dist/default/production/Lesson3 Rotate Led.X.production.map \
+  -Map=dist/default/production/RotateLed.X.production.map \
   --report-mem \
   --memorysummary \
   dist/default/production/memoryfile.xml \
@@ -44,15 +46,19 @@ Command:
 Optional library libpPIC24Fxxx.a not found
 Archive member included because of file (symbol)
 
-c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o)
                               (_resetPRI)
-c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\liblega-pic30-coff.a(delay32.Lo)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-coff.a(delay32.Lo)
                               build/default/production/RotateLedV011.o (__delay32)
-c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\liblega-pic30-coff.a(data_init_standard.o)
-                              c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o) (_data_init_standard)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-coff.a(data_init_standard.o)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o) (_data_init_standard)
 
 
-xc16-ld 1.34 (A)
+xc16-ld 1.70 (B)
+
+Default Code Model: Small
+Default Data Model: Large
+Default Scalar Model: Small
 
 "program" Memory  [Origin = 0x200, Length = 0xa9fc]
 
@@ -82,6 +88,8 @@ heap                             0                                   0  (0)
 stack                        0x800                              0x2000  (8192)
 
                  Maximum dynamic memory (bytes):         0x2000  (8192)
+
+Info: Project is using a large data memory model when small data memory model is sufficient.
 
 
 External Symbols in Program Memory (by address):
@@ -128,7 +136,7 @@ Linker script and memory map
 LOAD build/default/production/RotateLedV011.o
                     0x0001                  __MPLAB_BUILD = 0x1
 LOAD pPIC24Fxxx
-LOAD c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\libfx-coff.a
+LOAD c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libfx-coff.a
                     0xabfc                  __CONFIG2 = 0xabfc
                     0xabfe                  __CONFIG1 = 0xabfe
                     0x0001                  __NO_HANDLES = 0x1
@@ -147,13 +155,13 @@ LOAD c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\libfx-coff.a
 
 .text             0x000200         0xdc
  *(.init)
- .init            0x000200         0x40 c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o)
+ .init            0x000200         0x40 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o)
                   0x000200                  _resetPRI
                   0x000200                  _reset
                   0x000230                  _psv_init
- .init            0x000240         0x1c c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\liblega-pic30-coff.a(delay32.Lo)
+ .init            0x000240         0x1c c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-coff.a(delay32.Lo)
                   0x000240                  __delay32
- .init            0x00025c         0x7c c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\liblega-pic30-coff.a(data_init_standard.o)
+ .init            0x00025c         0x7c c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-coff.a(data_init_standard.o)
                   0x000262                  _data_init_standard
                   0x000262                  _data_init
  *(.user_init)
@@ -356,6 +364,9 @@ __CONFIG1
                     0x00c8                  IPC18 = 0xc8
                     0x00c8                  _IPC18 = 0xc8
                     0x00c8                  _IPC18bits = 0xc8
+                    0x00e0                  INTTREG = 0xe0
+                    0x00e0                  _INTTREG = 0xe0
+                    0x00e0                  _INTTREGbits = 0xe0
                     0x0100                  TMR1 = 0x100
                     0x0100                  _TMR1 = 0x100
                     0x0102                  PR1 = 0x102
@@ -785,11 +796,11 @@ __CONFIG1
                     0x0230                  UART2 = 0x230
                     0x0230                  _UART2 = 0x230
 START GROUP
-LOAD c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\liblega-pic30-coff.a
-LOAD c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\libm-coff.a
-LOAD c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\liblega-c-coff.a
+LOAD c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-coff.a
+LOAD c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-coff.a
+LOAD c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-coff.a
 END GROUP
-OUTPUT(dist/default/production/Lesson3_Rotate_Led.X.production.cof coff-pic30)
+OUTPUT(dist/default/production/RotateLed.X.production.cof coff-pic30)
 LOAD data_init
 LOAD default_isr
 
@@ -798,11 +809,11 @@ __c30_signature
  __c30_signature
                   0x000000          0x6 build/default/production/RotateLedV011.o
  __c30_signature
-                  0x000006          0x6 c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o)
+                  0x000006          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-coff.a(crt0_standard.o)
  __c30_signature
-                  0x00000c          0x6 c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\liblega-pic30-coff.a(delay32.Lo)
+                  0x00000c          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-coff.a(delay32.Lo)
  __c30_signature
-                  0x000012          0x6 c:/program files (x86)/microchip/xc16/v1.34/bin/bin/../../lib\liblega-pic30-coff.a(data_init_standard.o)
+                  0x000012          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-coff.a(data_init_standard.o)
 
 .config_JTAGEN    0x00abfe          0x2
  .config_JTAGEN
